@@ -66,7 +66,13 @@ replicaset.apps/kubernetes-dashboard-56484d4c5        1         1         1     
 
 ```
 
-> 注意  pod/kubernetes-dashboard-56484d4c5-wc2cf 
+> ⬆️注意  pod/kubernetes-dashboard-56484d4c5-wc2cf 
+
+> 注意  如果pod一直都是creating的状态，可以用👇的方法观察等待
+
+```shell
+kubectl get pod -n kubernetes-dashboard -w
+```
 
 执行
 
